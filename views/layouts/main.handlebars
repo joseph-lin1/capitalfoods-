@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Capital Foods</title>
+
+    <!--web icon-->
+    <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+
+    <!--reset css-->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!--page wrapper-->
+    <div class="wrapper">
+        <!--header-->
+        <header>
+            <div class="nav">
+                <div class="container">
+                    <div class="row nav-link-container">
+                        <div class="col-md d-flex justify-content-center align-items-center">
+                            <div class="logo">
+                                <img src="/assets/img/capitalfoodslogo.png">
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="nav-link">
+                                <a href="/" {{#if home }}class="active"{{/if}}>Home</a>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="nav-link ">
+                                <a href="/products/abcafe" {{#if products }}class="active"{{/if}}>Products</a>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="nav-link">
+                                <a href="/about" {{#if about }}class="active"{{/if}}>About</a>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="nav-link">
+                                <a href="/contact" {{#if contact }}class="active"{{/if}}>Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{{_sections.subMenu}}}
+                </div>
+            </div>
+        </header>
+        
+   {{{body}}}
+
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-copyright-container">
+                <p>Capital Foods International &copy; 2017</p>
+            </div>
+            <div class="footer-link-container d-flex flex-wrap justify-content-center">
+                <a href="/" class="footer-link">Home</a>
+                <a href="/products/abcafe" class="footer-link">Products</a>
+                <a href="/about" class="footer-link">About</a>
+                <a href="/contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <!--page wrapper-->
+
+    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--custom javascript-->
+    <script src="/assets/javascript/main.js"></script>
+
+  </body>
+</html>
